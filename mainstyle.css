@@ -1,0 +1,307 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+        
+        body{
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #4F4F4F;
+        }
+
+        section{
+            height: 100vh;
+            scroll-snap-align: start;
+            border-bottom: 0.07vw solid #4F4F4F;
+        }
+
+        a{
+            text-decoration: none;
+            color: #4F4F4F;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        /* mouse pointer */
+        /* ---------------------- */
+        #circle {
+            width: 0.8vw; 
+            height: 0.8vw;
+            border-radius: 50%; 
+            background-color: black;
+            position: absolute;
+            pointer-events: none;
+            transition: all 0.1s ease;
+        }
+
+        /* header */
+        /* -------------------- */
+        header{
+            width: 100%;
+            height: 6.25vw;
+            box-shadow: 0px 0.208vw 0.208vw rgba(0, 0, 0, 0.05);
+            display: flex;
+            position: fixed;
+            transition: all 0.3s ease-in-out;
+            z-index: 999;
+            top: 0;
+            background-color: #fff;
+            opacity: 0;
+        }
+
+        .visible{
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+
+        .headercon{
+            width: 85.417vw;
+            height: 2.813vw;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img{
+            width: 2.448vw;
+        }
+
+        .navbar{
+            display: flex;
+            font-size: 1.25vw;
+            font-weight: 300;
+            margin-left: auto;
+        }
+
+        ul{
+            overflow: hidden;
+        }
+
+        .dropdown_list{
+            flex-direction: column;
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            background-color: #fff;
+            width: 10.573vw;
+            height: 15vw;
+            box-shadow: 0px 0.2vw 0.8vw rgba(0, 0, 0, 0.05);
+            z-index: 1;
+            right: 4.5vw;
+            padding-top: 4vw;
+            top: 3.906vw;
+            transition: visibility 0s, opacity 0.3s ease;
+        }
+
+        li a, .dropbtn{
+            display: inline-block;
+            text-align: center;
+        }
+
+        li.dropbtn{
+            display: inline-block;
+        }
+
+        .dropdown_list a{
+            display: block;
+            margin-bottom: 2.292vw;
+        }
+
+        .dropdown:hover .dropdown_list, .dropdown_list:hover {
+            display: flex;
+            visibility: visible; 
+            opacity: 1; 
+            transition-delay: 0s; 
+        }
+        
+        .dropbtn{
+            margin-left: 3.906vw;
+        }
+
+        .nav_link:hover {
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        /* section1 */
+        /* ----------------------------- */
+        #section1{
+            color: #323232;
+        }
+
+        .sec1top{
+            width: 85.417vw;
+            margin: auto;
+            display: flex;
+        }
+
+        .sec1toptitle{
+            font-size: 3.333vw;
+            font-weight: 100;
+            padding-top: 2vw;
+        }
+
+        .sec1topline{
+            border-bottom: 0.09vw solid #4F4F4F;
+            width: 29vw;
+            height: 0.09vw;
+            margin-left: 1.771vw;
+            padding-top: 7.188vw;
+        }
+
+        .sec1bottom{
+            display: flex;
+            flex-direction: column;
+            width: 85.417vw;
+            margin: auto;
+            margin-top: 22vw;
+        }
+
+        .sec1bottomtitleT{
+            font-size: 3.333vw;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .sec1bottomtitleB{
+            font-size: 3.333vw;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        .arrow img{
+            position: absolute;
+            height: 15.573vw;
+            right: 7.292vw;
+            bottom: 5.729vw;
+            transition: all 0.7s ease;
+        }
+
+        /* section2 */
+        /* ------------------------ */
+        .sec2toptitle{
+            font-size: 3.333vw;
+            font-weight: 200;
+            padding-top: 5vw;
+            padding-left: 7.292vw;
+        }
+
+        .sec2con{
+            width: 85.417vw;
+            margin: auto;
+            display: flex;
+        }
+
+        .sec2textcon{
+            display: flex;
+            height: 19.688vw;
+            margin-top: 8vw;
+        }
+
+        .textleftcon{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.458vw;
+            font-weight: 200;
+            margin-left: 1vw;
+        }
+
+        .textleft{
+            margin: 0;
+            margin-bottom: 1.875vw;
+        }
+
+        .textrightcon{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.458vw;
+            font-weight: 500;
+            margin-left: 4.688vw;
+        }
+
+        .textright{
+            margin: 0;
+            margin-bottom: 1.875vw;
+        }
+
+        .profile{
+            width: 15.104vw;
+            height: 100%;
+            margin-top: 8vw;
+            margin-left: 32.552vw;
+        }
+
+        .sec2toptitle{
+            font-size: 3.333vw;
+            font-weight: 200;
+            padding-top: 5vw;
+            padding-left: 7.292vw;
+        }
+
+        /* section3 */
+        /* ------------------- */
+        .sec3toptitle{
+            font-size: 3.333vw;
+            font-weight: 200;
+            padding-top: 5vw;
+            padding-left: 7.292vw;
+        }
+
+        .sec3con{
+            width: 86vw;
+            margin: auto;
+            display: flex;
+            margin-top: 9vw;
+        }
+
+        .circle{
+            width: 16.563vw;
+            height: 16.563vw;
+            border-radius: 50%;
+            border: 0.08vw solid #323232;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circlecon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.667vw;
+            font-weight: 300;
+            margin: auto;
+            height: 100%;
+        }
+
+        .arrowR{
+            width: 1.486vw;
+            height: 1.028vw;
+            margin-left: 0.833vw;
+        }
+
+        .CCdiv{
+            display: flex;
+        }
+
+        /* footer */
+        /* --------------- */
+        footer{
+            width: 100%;
+            height: 5.208vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footertext{
+            font-size: 0.8vw;
+            font-weight: 500;
+            padding-top: 2.6vw;
+        }
