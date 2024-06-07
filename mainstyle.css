@@ -271,6 +271,17 @@
             justify-content: center;
         }
 
+        .circle:hover{
+            background-color: #323232;
+            transition: all 0.5s ease;
+            color: white;
+        }
+
+        .circle a:hover{
+            transition: all 0.5s ease;
+            color: white;
+        }
+
         .circlecon{
             display: flex;
             align-items: center;
