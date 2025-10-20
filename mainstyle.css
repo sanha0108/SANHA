@@ -201,7 +201,7 @@
         .sec2textcon{
             display: flex;
             height: 19.688vw;
-            margin-top: 8vw;
+            margin-top: 9vw;
         }
 
         .textleftcon{
@@ -315,4 +315,5 @@
             font-size: 0.8vw;
             font-weight: 500;
             padding-top: 2.6vw;
+
         }
